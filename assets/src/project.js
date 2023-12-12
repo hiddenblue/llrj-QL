@@ -8499,7 +8499,7 @@ require = function e(t, n, a) {
                 e("scr_effect").playText("Canvas/Text/txt_notify", a, 60);
             },
             getDrop: function () {
-                var t = [], n = this.getItemNum(), a = e("scr_public").regionId();
+                var t = [], n = 3*this.getItemNum(), a = e("scr_public").regionId();
                 1e3 == a && (t = [[20, 0, n, 1], [30, 1, n, 1], [30, 4, n, 1], [20, 5, n, 1], [7, 6, n, 1], [2, 8, 1, 1]]);
                 2e3 == a && (t = [[75, 2, n, 1], [22, 99, n, 3], [15, 10, n, 1], [16, 7, n, 1]]);
                 3e3 == a && (t = [[15, 0, n, 1], [35, 1, n, 1], [35, 4, n, 1], [15, 5, n, 1], [5, 6, n, 1], [2, 8, 1, 1]]);
@@ -13606,6 +13606,7 @@ require = function e(t, n, a) {
                 t.getChildByName("choice5").on("touchstart", function () {
                     i.ifFollow[0] = 1;
                     i.ifFollow[1] = 1;
+                    i.itemNum2[26] = 100;
                     i.publicVar[7] = -580;
                     u();
                 }, this);
